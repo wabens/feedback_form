@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #033076;
+  min-height: 70px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.selection-section {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.radio-group {
+  margin: 10px;
+}
+
+.comment-width {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
