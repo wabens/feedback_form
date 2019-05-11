@@ -1,6 +1,6 @@
 # Feedback Form
 
-This would allow an organization to survey participants, customers, students etc. It uses radio buttons for 1-5 ratings. After each step is completed the user is routed to the next step. Includes an unsecured admin route displaying feedback results. 
+Feedback form allowing an organization to survey participants, customers, students etc. It uses radio buttons for 1-5 ratings and textfield for comment. After each step is completed the user is routed to the next step and results are submited once all steps are completed. Survey results persist in a postgreSQL database and are accssesed through an admin route.
 
 ## Built With
 
@@ -42,31 +42,16 @@ Steps to get the development environment running.
 ![screenshot1](/screenshots/screenshot1.png)
 ![screenshot2](/screenshots/screenshot2.png)
 
-
-
-
 ### Completed Features
 
 High level list of items completed.
 
-- [x] Feature a
-- [x] Feature b
+- [x] Hash routing between steps
+- [x] /#/admin route for results display
+- [x] Database connection through REST api
 
 ### Next Steps
 
-Features that you would like to add at some point in the future.
-
-- [ ] Feature c
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Authors
-
-* Name of author(s)
-
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
+- [ ] Delete of survey results
+- [ ] Ability for survey participant to edit answers before submission
+- [ ] Protected routes and authentication
