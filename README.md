@@ -39,6 +39,7 @@ Steps to get the development environment running.
 
 ## Screen Shot
 
+![screenshot1](/screenshots/screenshot1)
 
 
 
