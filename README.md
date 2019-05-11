@@ -22,6 +22,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 - [Node.js](https://nodejs.org/en/)
 - [PostgreSQL client like Postico](https://eggerapps.at/postico/)
+- [Nodemon](https://nodemon.io/)
 
 
 ### Installing
@@ -32,9 +33,11 @@ Steps to get the development environment running.
 2. Create database called 'feedback_form' and run queries in data.sql file
 3. Install dependancies 
 `npm install`
-4. Start express server then react deployment server
+4. Start express server 
 `npm run server`
+5. Start react deployment server
 `npm run client`
+6. Navigate to http://localhost:3000/
 
 
 ## Screen Shot
