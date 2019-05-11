@@ -15,8 +15,7 @@ Feedback form allowing an organization to survey participants, customers, studen
 * PostgreSQL with postico
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Run things locally, in a development environment.
 
 ### Prerequisites
 
@@ -26,8 +25,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 
 ### Installing
-
-Steps to get the development environment running.
 
 1. Download repo
 2. Create database called 'feedback_form' and run queries in data.sql file
