@@ -1,83 +1,69 @@
-# Redux Feedback Loop
+# Feedback Form
 
-> **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
+This would allow an organization to survey participants, customers, students etc. It uses radio buttons for 1-5 ratings. After each step is completed the user is routed to the next step. Includes an unsecured admin route displaying feedback results. 
 
-"And my last reminder of the day, which is my last reminder of every day, is...?" - Luke
+## Built With
 
+* React.js
+* Redux
+* React-router-dom
+* Material-ui
+* Node.js
+* Axios
+* Express
+* PG
+* PostgreSQL with postico
 
- For this assignment, you will be creating a feedback form modeled after Prime's system. Feedback will be collected over 4 views, and when all steps are complete, your app will save the feedback in the database. In a separate part of the page, display the current feedback values and a submit button. 
+## Getting Started
 
-### SETUP
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Create your database and tables using the provided `data.sql` file. Start the server.
+### Prerequisites
 
-```
-npm install
-npm run server
-```
-
-Now that the server is running, open a new terminal tab with `cmd + t` and start the react client app.
-
-```
-npm run client
-```
-
-### ADD NEW FEEDBACK
-
-> NOTE: As a baseline requirement, you must use Redux to store your data across views.
-
-Create a multi-part form that allows users to leave feedback for today. 
-There will be 4 views for the form parts.
-The parts:
-- How are you feeling today?
-![feeling](wireframes/feeling.png)
-- How well are you understanding the content?
-![understanding](wireframes/understanding.png)
-- How well are you being supported?
-![support](wireframes/supported.png)
-- Any comments you want to leave?
-![comments](wireframes/comments.png)
-
-While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process as well as update the `Review` Component.
+- [Node.js](https://nodejs.org/en/)
+- [PostgreSQL client like Postico](https://eggerapps.at/postico/)
 
 
-## THE REVIEW COMPONENT
+### Installing
 
-In addition to the multi-step form, the app needs to display the results of each step clearly and at all times. HITN: This will be your current redux values displayed on the DOM. 
+Steps to get the development environment running.
 
-The simplest way could be another component on the DOM which shows the results of the current survey and a Submit button.
+1. Download repo
+2. Create database called 'feedback_form' and run queries in data.sql file
+3. Install dependancies 
+`npm install`
+4. Start express server then react deployment server
+`npm run server`
+`npm run client`
 
-### Incomplete, Submit button is disabled:
 
-![comments](wireframes/comments.png)
-
-### Survey complete, Submit button is active:
-
-![comments](wireframes/review.png)
-
-## SUBMIT THE FEEDBACK
-
-The `Review` portion needs a submit button which will be clicked on to actually submit the completed feedback to the server. **This submit button should only be active when all of the survey steps are complete.**
-
-When the submit button is clicked, save the submission in the database. The user should see a submission success page.
-
-![understanding](wireframes/page-five.png)
+## Screen Shot
 
 
 
-## STRETCH GOALS
 
-> NOTE: These stretch goals are intended to be completed in order.
+### Completed Features
 
-### ADMIN SECTION
+High level list of items completed.
 
-Display all of the existing feedback at the route `/admin`. The most recently added feedback should appear at the top of the list. Allow the user to delete existing feedback. Prompt the user to confirm prior to deleting the feedback from the database.
+- [x] Feature a
+- [x] Feature b
 
-![display feedback](wireframes/admin.png)
+### Next Steps
 
-### OTHER FEATURES
+Features that you would like to add at some point in the future.
 
-- Update this README.md to describe the project in your own words
-- Improve the styling of the app using Material-UI theme, cards, snackbars, buttons, nav bar, and icons, and anything else you'd like.
-- Add the ability to flag an existing feedback entry for further review on the /admin view
-- Deploy your project to Heroku -- you'll need to read the special instructions for building and deploying with these apps! 
+- [ ] Feature c
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Authors
+
+* Name of author(s)
+
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
