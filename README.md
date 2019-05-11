@@ -20,30 +20,27 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Link to software that is required before you attempt to start the app (e.g. node, mongo).
-
 - [Node.js](https://nodejs.org/en/)
 - [PostgreSQL client like Postico](https://eggerapps.at/postico/)
--
 
 
 ### Installing
 
 Steps to get the development environment running.
 
-1. Download this project.
-2. `npm install`
-3. `npm start`
+1. Download repo
+2. Create database called 'feedback_form' and run queries in data.sql file
+3. Install dependancies 
+`npm install`
+4. Start express server then react deployment server
+`npm run server`
+`npm run client`
 
-And so on...
 
 ## Screen Shot
 
-Include one or two screen shots of your project here (optional). Remove if unused.
 
-## Documentation
 
-Link to a read-only version of your scope document or other relevant documentation here (optional). Remove if unused.
 
 ### Completed Features
 
